@@ -68,7 +68,10 @@ img {
 .header {
   padding-top: 0;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 4px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -378,8 +381,8 @@ body {
   padding-bottom: 100px;
 }
 
-.icon {
-  fill: currentColor;
+.team .icon {
+  fill: #f4f4fd;
 }
 
 .footer-text {
@@ -430,7 +433,7 @@ body {
 
   background-color: #f4f4fd;
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid #8e8f99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,5 +478,9 @@ body {
 
 .footer .social-link:hover,
 .footer .social-link:focus {
-  background-color: #4d5ae5;
+  background-color: #31d0aa;
+}
+
+.footer .icon {
+  fill: #f4f4fd;
 }
