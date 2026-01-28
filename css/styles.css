@@ -61,11 +61,14 @@ img {
 
 .link {
   text-decoration: none;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
   padding-top: 0;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 4px rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -155,6 +158,10 @@ body {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -405,6 +412,16 @@ body {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .features-icon-wrapper {
@@ -413,7 +430,7 @@ body {
 
   background-color: #f4f4fd;
   border-radius: 4px;
-
+  border: 1px solid #e7e9fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,4 +464,16 @@ body {
 
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
+}
+
+.footer .social-link {
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: #4d5ae5;
 }
