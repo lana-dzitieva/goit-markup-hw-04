@@ -400,16 +400,10 @@ body {
   margin: 0;
 }
 
-.footer-social-title {
-  color: #fff;
-  text-align: left;
-  margin: 0;
-}
 .footer-social-links {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .footer-container {
@@ -425,6 +419,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .features-icon-wrapper {
